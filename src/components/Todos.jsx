@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
+import Todoitem from './Todoitem';
 
 
 class Todos extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-         
-          <h2>To Do List component</h2>
-        </div>
-        
-      </div>
-    );
+  render() {    
+    return this.props.todos.map((todo) => (
+
+    <Todoitem todo={todo}/>
+    // <h3> {todo.title} </h3>
+    ));
   }
 }
 
