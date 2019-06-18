@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import Todos from './components/Todos';
+
 class App extends Component {
   state = {
     todos: [
       {
         id: 1,
         title: 'go out for a run',
-        completed: false
+        completed: true
       },
       {
         id: 2,
